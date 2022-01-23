@@ -153,6 +153,7 @@ var renderNewPokemon = function (evt) {
   elPokemonInputWeight.value = null;
   elPokemonInputHeight.value = null;
   elPokemonInputUrl.value = null;
+  elPokemonInputUrl.setAttribute("placeholder", "Image: URL");
 };
 
 // USE DUNCTION RENDER POKEMONS
