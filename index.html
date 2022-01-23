@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Pokemons</title>
+  </head>
+  <body class="bg-warning">
+    <!-- POKEMONS -->
+    <section class="pokemons">
+      <div class="container">
+        <img
+          class="pokemons__logo mx-auto my-5"
+          src="./images/logo.svg"
+          alt="Pokemon's logo"
+          width="610"
+          height="225"
+        />
+
+        <form class="pokemons__form d-flex flex-wrap justify-content-center">
+          <input
+            class="pokemons__input"
+            type="text"
+            name="name"
+            placeholder="Name:"
+            autocomplete="off"
+          />
+
+          <input
+            class="pokemons__input"
+            type="text"
+            name="type"
+            placeholder="Type: Fire Flying"
+            autocomplete="off"
+          />
+
+          <input
+            class="pokemons__input"
+            type="number"
+            name="weight"
+            placeholder="Weight"
+            step="any"
+            autocomplete="off"
+          />
+
+          <input
+            class="pokemons__input"
+            type="number"
+            name="height"
+            placeholder="Height"
+            step="any"
+            autocomplete="off"
+          />
+
+          <input
+            class="pokemons__input"
+            type="url"
+            name="url"
+            placeholder="Image: URL"
+            autocomplete="off"
+          />
+
+          <button
+            class="pokemons__button text-center text-black fw-bold bg-white border border-3 border-dark"
+            type="submit"
+          >
+            Add new pokemon
+          </button>
+        </form>
+
+        <ul class="pokemons__list row m-0 p-0 list-unstyled">
+          <li class="pokemon px-2 col-3">
+            <div class="pokemon__inner pt-4 bg-white border border-3 border-dark">
+              <img
+                class="pokemon__image mx-auto mb-5"
+                src="http://www.serebii.net/pokemongo/pokemon/001.png"
+                alt=""
+                width="157"
+                height="157"
+              />
+
+              <div class="pokemon__info p-4 border-top border-3 border-dark">
+                <h3 class="pokemon__name mb-1 fw-bold">Bulbasaur</h3>
+
+                <p class="pokemon__weaknesses mb-4 h5">Grass, Poison</p>
+
+                <div class="pokemon__bottom d-flex fw-bold">
+                  <p class="pokemon__weight m-0 me-4">6.9 kg</p>
+
+                  <p class="pokemon__age m-0">99 age</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="./js/pokemon.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.pokemons__logo {
+  max-width: 610px;
+  width: 100%;
+  height: auto;
+}
+
+.pokemons__form {
+  column-gap: 35px;
+  row-gap: 30px;
+  margin-bottom: 100px;
+}
+
+.pokemons__input {
+  width: 270px;
+  padding: 9px;
+  border-radius: 15px;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &::placeholder {
+    color: black;
+  }
+}
+
+.pokemons__input--disabled {
+  box-shadow: 0 0 0 4px #dc35467c;
+}
+
+.pokemons__button {
+  width: 270px;
+  padding: 9px;
+  border-radius: 15px;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.pokemons__list {
+  row-gap: 30px;
+  align-items: stretch;
+}
+
+.pokemon__inner {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.pokemon__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/heart.svg");
+    cursor: pointer;
+  }
+}
